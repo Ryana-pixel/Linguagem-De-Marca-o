@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f3e8ff;
@@ -67,6 +66,32 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #f5eaff;
+}
+
+/* Produtos lado a lado */
+#produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#produtos h2 {
+    grid-column: 1 / -1;
+}
+
+/* Imagens menores */
+#produtos img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+/* Organização dos produtos */
+#produtos article {
+    text-align: center;
+    border: 1px solid #d8b4fe;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 footer {
